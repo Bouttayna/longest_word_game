@@ -1,0 +1,27 @@
+<div class= "text-center bg-grey">
+  <div class="card">
+  <div class="title"><h1>MY GAME</h1></div>
+
+
+    <p>Please choose a grid size to start playing</p>
+
+     <form action="/" method="get">
+        <input type="text" name="search_term">
+        <input type="submit" class="btn btn-danger" >
+      </form>
+
+
+    <%= @grid %>
+
+
+
+    <form action="/score" method="get">
+      <input type="text" name="answer">
+      <input type="hidden" name="grid" value="<%= @grid.join %>">
+      <input type="hidden" name="start_time" value="<%= @start_time.to_s %>">
+      <input type="submit" class="btn btn-danger" >
+    </form>
+  </div>
+</div>
+
+

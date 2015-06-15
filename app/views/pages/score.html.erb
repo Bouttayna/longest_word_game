@@ -1,0 +1,21 @@
+<div class="text-center bg-grey">
+ <div class="card">
+  <h1>SCORE</h1>
+      <p>Your Answer : <%= @answer %> </p>
+      <p>Translation : <%= @translation %></p>
+      <p>Number of letters: <%= @answer.size %> </p>
+      <p>Your Score : <%= @result[0] %></p>
+      <h2><%= @result[1] %></h2>
+<br>
+    <div class="btn btn-danger unstyled">
+    <%= link_to "Try again", "http://localhost:3000/" %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
